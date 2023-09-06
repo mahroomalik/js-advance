@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    parseInt() is the as the number function only difference is it covert decimal to integer...</h1>
+    <br>
+    <hr>
+    <script>
+    // for decimal and different input
+    // var a = "20 30";
+    // var b = 30.5;
+    //  var c = "30 years";
+    // input is NaN
+    var c = "He is 24";
+      var num = parseInt(c);
+      document.write(num);
+    </script>
+    <hr>
+    <h2> parseFloat also include point value:)</h2>
+    <script>
+      // var c = "He is 24";
+      var c = 30.55678;
+      var num = parseFloat(c);
+      document.write(num);
+    </script>
+     <hr>
+     <h2> "ls" function in js always return true or false value :</h2>its not work for boolean expression
+     <h5></h5>
+     <br>
+     <hr>
+     <h2> isFinite() is tell value is finite or not </h2>
+     <script>
+       // var c = "He is 24";
+      //  var c = 30.55678;
+      //  var c = "hello";
+       var c = Infinity;
+
+       // note false if value is not numaric , true for numaric value
+
+       var num =isFinite(c);
+       document.write(num);
+     </script>
+     <br>
+     <hr>
+     <script>
+      // var c = "He is 24";
+     //  var c = 30.55678;
+     //  var c = "hello";
+      var c = 10000;
+      // var a = "janan";
+      var a =100.5;
+      //note decimal number is not consider as number bcz it float number
+      var num =Number.isInteger(a);
+      document.write(num);
+    </script>
+    <br>
+    <hr>
+    <h5> toFixed() is use for decimal after point fixed e.g. 24.5678
+      2 digit fix is 24.56
+    </h5>
+    <script>
+    var c = 500.543;
+      var num = c.toFixed(3);
+      document.write(num);
+    </script>
+    <br>
+    <hr>
+    <h5> toPrecision() is use for round of value e.g 10.9 = 11 
+    </h5>
+    <script>
+    var c = 50.743;
+      var num = c.toPrecision(2);
+      document.write(num);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        //  var a = ["mahroo","MaLIK",25 ,"Pakistan"];
+         // note: curly bracket indicate object:
+         var a = {
+            firstName : "mahroo" , 
+            lastName : "MaLIK",
+            age :  25,
+            country : "Pakistan",
+            Email :'mahroomalik321@gmail.com',
+            favMovies : ["space", "the Martian", "gravity","tewelight sega"],
+            // note: we can also create object in object as nested  👎
+            // how to display ▶️  document.write(a.living.city);
+            living :{
+                city: 'islamabad',
+                country: 'Pakistan',
+
+            },
+            salery: function(){
+                return 100000;
+            },
+            //note: another function which is called method of object
+            fullname : function(){
+                return this.firstName + "  "+this.lastName ;
+            },
+         }
+         document.write(a.living.city);
+        //  document.write(a.fullname);
+         console.log(a);
+
+    </script>
+</body>
+</html>
