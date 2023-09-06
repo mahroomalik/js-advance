@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concatination</title>
+</head>
+<body>
+    <h1>concatination in javascript</h1>
+    <script>
+         var a = ["tiger" , "elephant", "lion" , "cat"];
+         var b = ("rat", "zebra");
+         var c = ("monkey" , "donkey");
+         var c = a.concat(b);
+         document.write(c +"<br>");
+         var a = ["tiger" , "elephant", "lion" , "cat"];
+         var b = ("rat", "zebra");
+         var c = ("monkey","donkey");
+         var d = a.concat(b,c);
+         document.write(d +"<br>");
+        // join functiom:
+        var a = ["tiger" , "elephant", "lion" , "cat"];
+         var b = ("rat", "zebra");
+         var c = ("monkey" , "donkey");
+         var d = a.concat(b , c);
+         var e = d.join(" - ")
+         document.write(e);
+
+    </script>
+</body>
+</html>

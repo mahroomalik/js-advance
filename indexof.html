@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Array indexOf(); function:</h1>
+    <h2> syntax ---> indexOf("Search item", Start)</h2>
+    <br>
+    <h3> this tell the from  left to right index ,  first to last </h3>
+    <script>
+        var a = ["aman" ,"sanjy", "rehman" ,"aman"];
+        document.write(a + " <br> <br>");
+        var b = a.indexOf("sanjy");
+        document.write(b);
+    </script>
+    <hr>
+    <h3> this tell the from right to left index , last to first</h3>
+    <script>
+        var a = [  "sanjy","amaan","harry", "rehman" ,"aman"];
+        document.write(a + " <br> <br>");
+        var b = a.lastIndexOf("aman");
+        document.write(b);
+    </script>
+    <hr>
+    <h3> this name is includes or not </h3>
+    <script>
+        var a = [  "sanjy","amaan","harry", "rehman" ,"aman"];
+        document.write(a + " <br> <br>");
+        var b = a.includes("aman");
+        document.write(b);
+    </script>
+    <h3> this tell the some number is or not </h3>
+    <script>
+        var ages = [ 18 , 19 , 15 ,18, 13];
+        document.write(ages + " <br> <br>");
+        var b = ages.filter(checkage);
+        document.write(b);
+        function checkage(age){
+            return age >= 18;
+        }
+    </script>
+</body>
+</html>
