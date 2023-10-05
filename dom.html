@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation🍂</title>
+    <style>
+        .bg-black{
+            background-color:#212121;
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+        <h4 class="heading" id="title">
+            DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove elements from the document.<span style="display: block;">
+            In HTML, ids are used as unique identifiers for the HTML elements. This means you cannot have the same id name for two different elements.</span> We can also add events to these elements to make our page more dynamic.
+            The DOM views an HTML document as a tree of nodes. A node represents an HTML element
+        </h4>
+        <p id="para">There are a few different methods for selecting an element in the HTML document.</p>
+        <h5>
+        In this article, we will focus on three of those methods:
+        </h5>
+        <h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ut explicabo sapiente ex facere numquam minus? Eum quibusdam repellat odio, voluptatum itaque quod, quas veniam minima ab non tempora praesentium!</p></h5>
+        <h5>Libero sint incidunt vero consequatur totam labore dolor quam magni aspernatur. Beatae impedit quaerat obcaecati minima perspiciatis quasi, inventore ipsa quia itaque dolores ea voluptates, tempore necessitatibus voluptate aliquam repellat.</h5>
+        <h5>Quia minus rerum iste adipisci magni quam iusto repellat nam doloremque ullam cupiditate recusandae delectus impedit fuga, possimus obcaecati tenetur perferendis nesciunt hic autem minima corporis dicta totam. Error, a.</h5>  
+        <ul>
+        <li>getElementById()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li> 
+        </ul>
+        <label>Name</label>
+        <input type="text" > 
+        <!-- console search:
+        1. document.querySelector('input [type="name"]');
+        2.document.querySelector('p:first-child');
+        3.document.querySelector('ul');
+        4.let ul = document.querySelector('ul');
+        ul.querySelector('li');
+        let colr = ul.querySelector('li');
+        colr.style.color = "green";
+        5. let lst = document.querySelector('ul');
+        lst.querySelectorAll('li');
+        let y = lst.querySelectorAll('li');
+        y.style.color = "red";
+        y[1].style.color = "pink"; 
+      Note: nodelist's prototype has no map instead array has
+    note: use forEach loop in nodeList to select attribute and change otherwise convert it into Array thrn apply array methods -->
+     
+      <ol>
+        <li class="list-item">Python</li>
+        <li class="list-item">Java</li>
+        <li class="list-item">Javascript</li>
+        <li class="list-item">PHP</li>
+      </ol>
+</body>
+</html>

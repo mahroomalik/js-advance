@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Created Element</title>
+    <style>
+        body{
+            background-color: black;
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    🍂🍂🍂🍂 
+
+    <ul class="lang">
+        <li> 🍂javascript</li>
+    </ul>
+<script>
+        // how to create element in js 
+// const div1 = document.createElement('div')
+// console.log(div1);
+// div1.className = "createdClass";
+// div1.id = "createdClass";
+// div1.setAttribute("title", "createdTitle")
+// const injectText = document.createTextNode("🍂🍂 chai aur code ....🍂🍂")
+// div1.appendChild(injectText);
+// document.body.appendChild(injectText);
+// how to create list with the help of js 
+function addlang(languageName){
+    let langs = document.createElement('li')
+    // let langtext =document.createTextNode('java')   
+    // langs.appendChild(langtext)
+    // document.body.appendChild(langtext)
+    langs.innerHTML= `${languageName}`
+    document.querySelector(".lang").appendChild(langs)
+}
+addlang('🍂java');
+addlang('🍂python');
+addlang('🍂PHP');
+addlang('🍂Rubby');
+// another way to create list in above
+function addOptimizeLanguage(languageName){
+    let li= document.createElement('li');
+    // const addtext = document.createTextNode(languageName)
+    // addtext.appendChild(document.createTextNode(languageName))
+    li.appendChild(document.createTextNode(languageName))
+    document.querySelector('.lang').appendChild(li)    
+}
+addOptimizeLanguage('🍂golang')
+addOptimizeLanguage('🍂react')
+addOptimizeLanguage('🍂mongoDB');
+//Edit 
+let secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "🍂kill the waves🍂";
+// anotherway
+const newli = document.createElement('li')
+newli.textContent = "🍂kill the waves🍂🍂🍂"
+ secondLang.replaceWith(newli);
+ // anotherWay 
+ const firstlang = document.querySelector('li');
+ firstlang.outerHTML ="<li>🍂Perl</li>"
+ // we can use inner html also in replace of inner html
+ //remove
+ const lastLang = document.querySelector('li:last-child')
+ lastLang.remove();
+
+ 
+
+
+</script>
+</body>
+</html>

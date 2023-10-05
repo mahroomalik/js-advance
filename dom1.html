@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | lecture#2 </title>
+    <style>
+        body{
+            background-color: black;
+            color:aliceblue;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div> -->
+    <script>
+    let parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(  "🍂🍂🍂🍂🍂🍂🍂" );
+    console.log(parent.children[1].innerHTML);
+    console.log("break .........");
+    for (let i = 0; i <parent.children.length ; i++) {
+        // console.log(parent.children[i].innerHTML);
+    }
+    parent.children[1].style.color = "red";
+    parent.children[2].innerText = "thursday";
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    parent.children[3].style.color = "red";
+//     console.log(  "🍂🍂🍂🍂🍂🍂🍂" );
+
+//  // for Parent element:
+ let cls = document.querySelector('.day')
+console.log(cls);
+console.log(cls.parentElement);
+// console.log(cls.parentNode);
+console.log(  "🍂🍂🍂🍂🍂🍂🍂" );
+
+//  for nextSibling
+console.log(cls.nextElementSibling);
+console.log(  "🍂🍂🍂🍂🍂🍂🍂" );
+console.log(parent.firstElementChild);
+console.log(parent.lastElementChild);
+console.log("Nodes:", parent.childNodes);
+    </script>
+</body>
+</html>
